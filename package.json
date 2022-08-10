@@ -1,0 +1,22 @@
+{
+  "name": "my-hygen-templates",
+  "version": "1.0.0",
+  "description": "My templates of hygen",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mymactive/my-hygen-templates.git"
+  },
+  "author": "miyazaki masashi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mymactive/my-hygen-templates/issues"
+  },
+  "homepage": "https://github.com/mymactive/my-hygen-templates#readme",
+  "devDependencies": {
+    "hygen": "^6.2.8"
+  }
+}
