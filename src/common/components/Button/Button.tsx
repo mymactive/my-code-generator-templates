@@ -1,14 +1,10 @@
----
-to: <%= path %>/<%= name%>.tsx
----
 import { type FC } from "react";
 import style from './styles.module.css';
-<% if (have_props) { -%>
 
-export type Props = {};
-<% } -%>
+export type Props = {
+};
 
-export const <%= name%>: <%- type_annotate %> = <%= props %> => {
+export const Button: FC<Props> = (props) => {
   return (
     <div className={style.module}>
       <h1>Hello World</h1>

@@ -1,20 +1,20 @@
 ---
-to: <%= path %>/<%= component_name%>.stories.tsx
+to: <%= path %>/<%= name%>.stories.tsx
 ---
 import { <%= story_types %> } from "@storybook/react"
-import { <%= component_name %> } from "./<%= component_name %>"
+import { <%= name %> } from "./<%= name %>"
 <% if (have_props) { -%>
 
-type Meta = ComponentMeta<typeof <%= component_name %>>;
-type Story = ComponentStory<typeof <%= component_name %>>;
+type Meta = ComponentMeta<typeof <%= name %>>;
+type Story = ComponentStory<typeof <%= name %>>;
 <% } -%>
 
 export default {
-  title: '<%= component_name %>',
-  component: <%= component_name %>,
+  title: '<%= name %>',
+  component: <%= name %>,
 } as Meta
 
-const Template: Story = (args) => <<%= component_name %> {...args} />
+const Template: Story = (args) => <<%= name %> {...args} />
 
 export const Default: Story = Template.bind({})
 Default.args = {}

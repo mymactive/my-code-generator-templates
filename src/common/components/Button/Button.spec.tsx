@@ -1,12 +1,9 @@
----
-to: <%= path %>/<%= name%>.spec.tsx
----
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { <%= name%> } from './<%= name%>';
+import { Button } from './Button';
 
 
 test('h1要素を持つ', () => {
-  render(<<%= name%> />);
+  render(<Button />);
   expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument();
 })

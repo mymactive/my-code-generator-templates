@@ -1,4 +1,4 @@
 ---
 to: <%= path%>/index.ts
 ---
-export * from './<%= component_name%>';
+export * from './<%= name%>';
