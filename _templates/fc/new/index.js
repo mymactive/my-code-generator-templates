@@ -30,7 +30,7 @@ module.exports = {
       const { join } = require('path');
 
       const path = join(`${dir || 'src/'}`, '/', name);
-      const type_annotate = have_props ? 'FC<Props>' : 'FC';
+      const type_annotate = have_props ? `FC<${name}Props>` : 'FC';
       const props = have_props ? '(props)' : '()';
       const story_types = have_props
         ? 'type ComponentMeta, type ComponentStory'

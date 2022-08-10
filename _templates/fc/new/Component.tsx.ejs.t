@@ -5,7 +5,7 @@ import { type FC } from "react";
 import style from './styles.module.css';
 <% if (have_props) { -%>
 
-export type Props = {};
+export type <%= name%>Props = {};
 <% } -%>
 
 export const <%= name%>: <%- type_annotate %> = <%= props %> => {
