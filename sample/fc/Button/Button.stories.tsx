@@ -5,7 +5,7 @@ type Meta = ComponentMeta<typeof Button>;
 type Story = ComponentStory<typeof Button>;
 
 export default {
-  title: 'Button',
+  title: 'sample/fc/button',
   component: Button,
 } as Meta
 

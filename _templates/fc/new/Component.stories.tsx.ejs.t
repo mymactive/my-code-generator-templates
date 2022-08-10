@@ -10,7 +10,7 @@ type Story = ComponentStory<typeof <%= name %>>;
 <% } -%>
 
 export default {
-  title: '<%= name %>',
+  title: '<%= h.changeCase.path(`${dir}/${name}`) %>',
   component: <%= name %>,
 } as Meta
 
