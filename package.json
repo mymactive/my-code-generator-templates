@@ -4,7 +4,8 @@
   "description": "My templates of hygen",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "fc:new": "hygen fc new"
   },
   "repository": {
     "type": "git",
