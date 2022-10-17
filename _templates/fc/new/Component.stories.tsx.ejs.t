@@ -8,16 +8,10 @@ type T = typeof <%= name %>
 type Meta = ComponentMeta<T>;
 type Story = ComponentStoryObj<T>;
 
-<% if (have_props) { -%>
-import { ComponentPropsWithoutRef } from 'react';
-
-const args: ComponentPropsWithoutRef<T> = {}
-<% } -%>
-
 export default {
   component: <%= name %>,
   <% if (have_props) { -%>
-  args,
+  args: {},
   <% } -%>
 } as Meta
 
