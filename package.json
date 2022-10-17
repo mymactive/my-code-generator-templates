@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/mymactive/my-hygen-templates#readme",
   "devDependencies": {
-    "hygen": "^6.2.8"
+    "hygen": "^6.2.11"
   }
 }
