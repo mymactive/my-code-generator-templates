@@ -1,13 +1,14 @@
-import { renderHook, act } from "@testing-library/react";
-import { useToggle } from "./useToggle";
+import { renderHook, act } from '@testing-library/react';
+import { useToggle } from './useToggle';
+
 
 test.each([
   [true, false],
   [false, true],
 ])(
-  "Initial Stateが%sの場合。toggleを実行すると、stateは%sとなる",
+  'When initialState is %s, call toggle, then, state should be %s',
   (initialState, expected) => {
-    const { result } = renderHook(() => useToggle(true));
+    const { result } = renderHook(() => useToggle(initialState));
     act(() => {
       result.current.toggle();
     });

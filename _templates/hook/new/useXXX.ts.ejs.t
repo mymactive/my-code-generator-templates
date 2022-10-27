@@ -1,5 +1,5 @@
 ---
-to: <%= path %>/<%= name%>.ts
+to: <%= path %>/index.ts
 ---
 import { useState, useCallback } from 'react';
 
