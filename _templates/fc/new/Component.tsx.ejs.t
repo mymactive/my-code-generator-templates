@@ -1,5 +1,5 @@
 ---
-to: <%= path %>/<%= name%>.tsx
+to: <%= path %>/index.tsx
 ---
 import { type FC } from "react";
 import style from './styles.module.css';

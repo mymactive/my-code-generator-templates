@@ -6,7 +6,6 @@ import { render, screen } from '@testing-library/react';
 import { <%= name%> } from './<%= name%>';
 
 
-test('h1要素を持つ', () => {
+test('Enjoy Testing!', () => {
   render(<<%= name%> />);
-  expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument();
 })

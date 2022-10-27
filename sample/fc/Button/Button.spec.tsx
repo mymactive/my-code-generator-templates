@@ -3,7 +3,6 @@ import { render, screen } from '@testing-library/react';
 import { Button } from './Button';
 
 
-test('h1要素を持つ', () => {
+test('Enjoy Testing!', () => {
   render(<Button />);
-  expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument();
 })
