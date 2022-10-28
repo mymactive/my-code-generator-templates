@@ -7,24 +7,24 @@ module.exports = {
   prompt: ({ inquirer, _args }) => {
     const questions = [
       {
-        type: 'input',
-        name: 'dir',
+        type: "input",
+        name: "dir",
         message:
-          'どのディレクトリに作成しますか？(Where is tha directory?) ex: src/common/hooks/',
-        initial: 'src/',
+          "どのディレクトリに作成しますか？(Where is tha directory?) ex: src/common/hooks/",
+        initial: "src/",
       },
       {
-        type: 'input',
-        name: 'name',
+        type: "input",
+        name: "name",
         message:
-          'フック名は何ですか？(What is the name of hook?) ex: useToggle',
+          "フック名は何ですか？(What is the name of hook?) ex: useToggle",
       },
     ];
     return inquirer.prompt(questions).then((answers) => {
       const { dir, name } = answers;
-      const { join } = require('path');
+      const { join } = require("node:path");
 
-      const path = join(dir, '/', name);
+      const path = join(dir, "/", name);
       return { ...answers, path };
     });
   },

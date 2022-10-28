@@ -28,7 +28,7 @@ module.exports = {
     ];
     return inquirer.prompt(questions).then((answers) => {
       const { dir, name, have_props } = answers;
-      const { join } = require("path");
+      const { join } = require("node:path");
 
       const path = join(`${dir || "src/"}`, "/", name);
       const type_annotate = have_props ? `FC<${name}Props>` : "FC";
