@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "fc:new": "hygen fc new",
-    "hook:new": "hygen hook new",
+    "hygen": "hygen",
     "plop": "plop"
   },
   "repository": {
