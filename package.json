@@ -1,23 +1,24 @@
 {
   "name": "my-hygen-templates",
   "version": "1.0.0",
-  "description": "My templates of hygen",
+  "description": "My  templates of hygen",
   "main": "index.js",
   "scripts": {
     "test": "test",
     "fc:new": "hygen fc new",
-    "hook:new": "hygen hook new"
+    "hook:new": "hygen hook new",
+    "plop": "plop"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mymactive/my-hygen-templates.git"
+    "url": "git+https://github.com/mymactive/my-code-generator-templates.git"
   },
   "author": "miyazaki masashi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mymactive/my-hygen-templates/issues"
+    "url": "https://github.com/mymactive/my-code-generator-templates/issues"
   },
-  "homepage": "https://github.com/mymactive/my-hygen-templates#readme",
+  "homepage": "https://github.com/mymactive/my-code-generator-templates#readme",
   "devDependencies": {
     "hygen": "^6.2.11",
     "plop": "^3.1.2"
